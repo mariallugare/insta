@@ -4,6 +4,6 @@ from django.views.generic import (ListView)
 # Create your views here.
 
 class PostisView(ListView):
-    template_name = "insta/post_lists.html"
+    template_name = "insta/post_list.html"
     Queryset =post.objects.all()
     context_object_name ='posts'
