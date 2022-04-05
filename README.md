@@ -38,9 +38,9 @@ $ python3.9 manage.py runserver
 Open port *http://127.0.0.1:8000/ * to interact with the application
 
  # Known Bugs
-There are known bugs.
+There are no known bugs.
 
-Technologies Used
+ # Technologies Used
 PYTHON
 DJANGO 3.2.8
 HTML5
