@@ -7,6 +7,10 @@ class PostListView(ListView):
     template_name = 'insta/post_list.html'
     queryset = post.objects.all()
     context_object_name ='posts'
+
+def index(request):
+
+    return render(request, 'insta/index.html')
   
 
 
