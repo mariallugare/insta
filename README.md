@@ -18,11 +18,16 @@ Open the downloaded folder in a text editor of your preference
 
 # To install virtual environment:
 
-$ python3.8 -m venv --without-pip virtual
+$ python3.9 -m venv --without-pip virtual
+
 Activate virtual environment
+
 $ source virtual/bin/activate
+
 Install latest pip version inside virtual environment
+
 $ curl https://bootstrap.pypa.io/get-pip.py | python
+
 Installing the dependencies
 $ pip install -r requirements.txt
 Starting up the application
