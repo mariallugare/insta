@@ -4,7 +4,8 @@ Created By: Marial Lugare on 06/04/2022.
  #  Description of the application
 The application is a clone of Instagram application which allows users to post photos,like and comment on them after signing up.
 
-Installation Requirements
+ # Installation Requirements
+ 
 Django-3.2.8
 Django-bootstrap-v5
 Setup process
