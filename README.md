@@ -6,12 +6,18 @@ The application is a clone of Instagram application which allows users to post p
 
  # Installation Requirements
  
-Django-3.2.8
+Django-3.9
+
 Django-bootstrap-v5
+
 Setup process
+
 Clone this repository using the link from the clone button
+
 Open the downloaded folder in a text editor of your preference
-To install virtual environment:
+
+# To install virtual environment:
+
 $ python3.8 -m venv --without-pip virtual
 Activate virtual environment
 $ source virtual/bin/activate
