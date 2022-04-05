@@ -1,6 +1,10 @@
 {%extends 'insta/base.html'%}
 
 {% block content %}
+{% for post in posts%}
+<!-- {{post.caption}} -->
+
+
 <header class="header">
     <nav class="header__content">
       <div class="header__buttons">
@@ -303,7 +307,7 @@
                   </svg>
                 </div>
                 <div class="story__picture">
-                  <img src="assets/default-user.png" alt="User Picture" />
+                  <img src="{{post.image}}" alt="User Picture" />
                 </div>
               </div>
               <span class="story__user">Alphine dora</span>
@@ -777,7 +781,8 @@
                 <div class="post__description">
                   <span>
                     <a class="post__name--underline" href="#">Appolo</a>
-                    Multiple media post example. This post has three images!
+                    <!-- Multiple media post example. This post has three images! -->
+                    {{post.caption}}
                   </span>
                 </div>
 
@@ -920,7 +925,7 @@
                 <div class="post__description">
                   <span>
                     <a class="post__name--underline" href="#">Nelly</a>
-                    Single media post example.
+                    {{post.caption}}
                   </span>
                 </div>
 
@@ -982,7 +987,7 @@
                 <img
                   class="post__media"
                   src="assets/insta-clone.png"
-                  alt="Post Content"
+                  
                 />
               </div>
             </div>
@@ -1070,7 +1075,7 @@
 
                   <span
                     >Liked by
-                    <a class="post__name--underline" href="#">user123</a> and
+                    <a class="post__name--underline" href="#">yoshua</a> and
                     <a href="#">73 others</a></span
                   >
                 </div>
@@ -1078,15 +1083,11 @@
                 <div class="post__description">
                   <span>
                     <a class="post__name--underline" href="#">Harriet</a>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique laudantium consequuntur vitae impedit eaque?
-                    Accusantium rerum vel ducimus perspiciatis nesciunt a
-                    minus minima earum delectus. Doloremque consequuntur
-                    ducimus illum placeat!
+                    {{post.caption}}
                   </span>
                 </div>
 
-                <span class="post__date-time">1 day ago</span>
+                <span class="post__date-time"></span>
               </div>
             </div>
           </article>
@@ -1230,10 +1231,7 @@
                 <div class="post__description">
                   <span>
                     <a class="post__name--underline" href="#">Hari</a>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ducimus voluptates expedita ab vel dolore voluptatem rerum
-                    repudiandae unde temporibus sed quos quis illo, dolores
-                    facere officiis autem. Error, non quidem.
+                    {{post.caption}}
                   </span>
                 </div>
 
@@ -1361,7 +1359,7 @@
           </div>
 
           <span class="side-menu__footer-copyright"
-            >&copy; 2021 instagram from facebook</span
+            >&copy; 2022 instagram from facebook</span
           >
         </div>
       </section>
@@ -1477,5 +1475,5 @@
     </button>
   </nav>
 
-
+{% endfor%}
 {% endblock%}

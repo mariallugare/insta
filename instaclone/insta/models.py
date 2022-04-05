@@ -4,10 +4,15 @@ from django.utils import timezone
 
 # Create your models here.
 class post(models.Model):
-    author = models.ForeignKey('auth.user',on_delete =models.CASCADE)
+    author = models.ForeignKey('auth.user', on_delete=models.SET_NULL, null=True, blank=True)
     image = models.ImageField(blank=True,null=True)
     caption = models.TextField()
     created_date =models.DateTimeField(default= timezone.now)
 
     def __str__(self):
         return self.caption
+
+    def display_post(cls):
+
+        post = cls.objects.all() 
+        return post

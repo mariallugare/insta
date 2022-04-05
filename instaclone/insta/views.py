@@ -9,8 +9,8 @@ class PostListView(ListView):
     context_object_name ='posts'
 
 def index(request):
-
-    return render(request, 'insta/index.html')
+    posts = post.objects.all()
+    return render(request, 'insta/index.html', {'posts':posts})
   
 
 
